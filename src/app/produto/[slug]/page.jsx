@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 import Produto from "@/app/components/Produto";
 
 async function getProduto(slug) {
-  const res = await fetch(`http://localhost:3000/api/produto/${slug}`);
+  const res = await fetch(`http://localhost:3000/api/produtos/${slug}`);
   const produto = await res.json();
   return produto;
 }
